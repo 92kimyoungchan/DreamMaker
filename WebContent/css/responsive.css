@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+
+@media screen and (min-width:1500px) {
+	header .container, footer .container {
+    width:1400px;
+  }
+}
+
+
+@media screen and (max-width:991px) {
+	html, body {
+	font-family: 'Roboto','Noto Sans KR', sans-serif;
+	}
+  .headerWrap header .container {
+      display:block;
+      width:100%;
+      padding:8px 0;
+  }
+	header .navigator .naviHeaderWrap ul li {
+		min-width:125px;
+	}
+  header .logo {
+    width:175px;
+    margin:0 auto;
+  }
+	header .navigator .naviHeaderWrap ul li a {
+		font-size:14px;
+	}
+  header .statusWrap .join {
+    display:none;
+  }
+  header .statusWrap .navigator {
+    float:none;
+    width:100%;
+    text-align:center;
+    margin-top:0;
+  }
+  header .statusWrap {
+    width:100%;
+    margin-top:16px;
+    padding:8px 0;
+    border-top:1px solid black;
+  }
+	header .navigator .naviHeaderWrap ul {
+		float:none;
+		width:100%;
+	}
+	header .navigator .naviHeaderWrap ul {
+		float:none;
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+
+	header .join .pWrap p:first-of-type {
+		margin:0 79.5px 0 0px;
+	}
+	header .logo .imgWrap {
+		max-width:185px;
+	}
+	header .logo {
+		padding-top:16px;
+	}
+	header .statusWrap {
+		width:calc(100% - 185px);
+	}
+	header .navigator .naviHeaderWrap ul li {
+		min-width:140px;
+	}
+	header .navigator .uberWrap .uberMenu .uberColumn {
+		min-width:140px;
+	}
+	header .join .pWrap {
+		padding-right:53.5px;
+	}
+	header .navigator .naviHeaderWrap ul li a {
+		font-size:17px;
+	}
+
+
+}
+
+@media screen and (min-width:646px) and (max-width:991px) {
+
+		header .navigator .naviHeaderWrap ul {
+				max-width:580px;
+				margin:0 auto;
+		}
+		header .navigator .naviHeaderWrap ul li , header .navigator .uberWrap .uberMenu .uberColumn {
+			min-width:145px !important;
+		}
+		header .navigator .uberWrap {
+			right:calc((100% - 580px)/2);
+		}
+		header .navigator .uberWrap {
+			padding-top:15px;
+		}
+		header .navigator .naviHeaderWrap ul li:hover:after, header .navigator .naviHeaderWrap ul li.active:after {
+				width:145px !important;
+				left:calc(50% - 72.5px);
+		}
+		header .navigator .naviHeaderWrap ul li:nth-of-type(3):hover:after, header .navigator .naviHeaderWrap ul li.active:nth-of-type(3):after {
+			width:145px !important;
+			left:calc(50% - 72.5px);
+		}
+}
+
+
+@media screen and (max-width:645px) {
+	header .navigator .naviHeaderWrap ul li , header .navigator .uberWrap .uberMenu .uberColumn {
+		min-width:auto;
+		width:calc(100% / 4);
+	}
+	header .navigator .naviHeaderWrap ul li:hover:after, header .navigator .naviHeaderWrap ul li.active:after {
+			width:calc(100% / 3) !important;
+			left:calc(100% / 3);
+	}
+	header .navigator .naviHeaderWrap ul li:nth-of-type(3):hover:after, header .navigator .naviHeaderWrap ul li.active:nth-of-type(3):after {
+	width:25%  !important;
+	width:calc(100% / 3) !important;
+	left:calc(100% / 3);
+	}
+	header .navigator .uberWrap .uberMenu {
+
+	}
+	header .navigator .uberWrap .uberMenu .uberColumn ul li a {
+		font-size:16px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	header .navigator .naviHeaderWrap ul li:hover:after, header .navigator .naviHeaderWrap ul li.active:after {
+		display:none;
+	}
+	header .navigator .naviHeaderWrap ul li:nth-of-type(3):hover:after, header .navigator .naviHeaderWrap ul li.active:nth-of-type(3):after {
+	  display:none;
+	}
+
+	header .statusWrap {
+		padding:0;
+	}
+	header .statusWrap {
+		border-top:2px solid #e8e8e8;
+	}
+	header .navigator .naviHeaderWrap ul li.active  {
+			 border:0px solid #e8e8e8;
+			 border-width:0px 2px 0px 2px;
+	}
+	header .navigator .naviHeaderWrap ul li {
+		 border:0px solid #e8e8e8;
+		 border-width:0px 0px 2px 0px;
+		 PADDING:6.5PX 0;
+		 min-height:61px;
+	}
+	header .navigator .naviHeaderWrap ul li.active a {
+
+	}
+	header .logo {
+		max-width:145px;
+		height:66px;
+		min-height:auto;
+	}
+	header .logo .imgWrap img {
+		height:66px;
+	}
+	header .navigator .naviHeaderWrap ul li a {
+		line-height:46px;
+	}
+	header .navigator .naviHeaderWrap ul li:nth-of-type(3) a {
+		line-height:23px;
+	}
+	header .navigator .naviHeaderWrap ul li a br {
+		display:block;
+	}
+	.headerWrap header .container {
+		margin:10px 0;
+		padding:0;
+		position:relative;
+	}
+
+header .logo .imgWrap {
+	padding-top:0;
+}
+	.mobileMenuWrap .mobileMenu.active {
+	  display:block;
+	}
+
+header .statusWrap {
+	display:none;
+}
+
+
+	header .anotherMobileWrap {
+	  display:block;
+	}
+
+
+
+}

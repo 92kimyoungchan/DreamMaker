@@ -1,0 +1,369 @@
+
+
+/* 헤더존 */
+.adminNavWrapper {
+	background:white;
+	padding: 10px 0 0;
+}
+
+.adminNavWrapper nav {
+	border-bottom: 0;
+	box-shadow: none;
+}
+
+.adminNavWrapper .adminStatusWrapper {
+
+padding: 0 20px 0px 20px;
+}
+
+.adminStatusWrapper .adminStatus {
+	float: right;
+}
+
+.adminStatusWrapper .adminStatus span {
+	margin-right: 15px;
+	font-size: 17px;
+}
+
+.adminStatusWrapper .adminStatus span b {
+
+}
+
+.adminStatusWrapper .adminStatus a {
+	margin:0 6.5px;
+	padding:6.5px 10px;
+	font-size: 17PX;
+}
+
+.adminStatusWrapper .adminStatus a:hover {
+	background:#f1f1f1;
+	border-radius:12.5px;
+
+}
+.adminStatusWrapper .adminStatus a:last-of-type {
+	margin: 0 0 0 6.5px;
+}
+
+.adminNavWrapper .brandLogo {
+	float: left;
+	max-width: 140px;
+	margin: 0 0 25px 25px;
+}
+.adminNavWrapper .brandLogo img {
+
+max-width: 100%;
+
+height: auto;
+}
+
+.adminTitle {
+	padding:22px 0;
+	background:#7EB4d6;
+}
+
+.adminTitle h2 {
+	font-size: 22.5px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	color: white;
+	font-weight: bold;
+	padding-left: 25px;
+	margin-top: 0;
+}
+.adminSubTitle {
+
+margin: 25px 0 55px;
+}
+
+.adminSubTitle h2{
+	padding-bottom:0;
+	font-size: 28.5px;
+	margin-bottom: 0;
+}
+
+.adminSubTitle span.pageTitle {
+	font-weight: 550;
+	margin-bottom:18px;
+	color:#5a5b5b;
+}
+
+
+
+/* 테이블 */
+
+/* 테이블 */
+
+.tableManagement {
+	border-top: 1px solid #d9d4d4;
+}
+
+.adminTableWrap table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    border:1px solid #c1c1c1;
+
+}
+
+.tableManagement tr{
+	border-bottom: 1px solid #d9d4d4;
+}
+
+.tableManagement thead {
+	background-color: #eeeeee;
+	border-top: 2px solid #1d8bcb;
+}
+
+.tableManagement thead > tr {
+
+	}
+.adminTableWrap table > tbody {
+
+}
+
+.tableManagement thead th:nth-child(1){
+
+
+}
+.tableManagement thead th{
+
+border-left: 1px solid #d9d4d4;
+
+text-align: center;
+
+padding: 10px 0px;
+
+font-size: 16px;
+
+letter-spacing: -1px;
+
+border-right: 1px solid #d9d4d4;
+
+color: #666;
+}
+
+.tableManagement tbody td:nth-child(1) {
+
+}
+
+.tableManagement tbody td {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	color: #666;
+	/* letter-spacing: -0.4px; */
+	line-height: 30px;
+	border-left: 1px solid #d9d4d4;
+	border-right: 1px solid #d9d4d4;
+	padding: 10.5px;
+	font-size: 14.5px;
+}
+
+
+ .tableManagement tbody td.function {
+
+ }
+ .tableManagement tbody td.function.noneLb {
+
+ }
+
+  .tableManagement tbody td.function .statusWrapper {
+
+ }
+
+  .tableManagement tbody td.function .statusWrapper label {
+
+margin-bottom: 0;
+
+line-height: 31px;
+
+margin-right: 15px;
+ }
+
+  .tableManagement tbody td.function .statusWrapper button {
+
+height: 31px;
+
+width: 80px;
+
+border: none;
+
+background: #1d8bcb;
+
+color: white;
+
+margin-left: 15px;
+
+
+ }
+
+ .tableManagement tbody td.function .statusWrapper button.player {
+ 	min-width:110px;
+ }
+
+ .tableManagement tbody td.function .statusWrapper button:nth-of-type(1) {
+ 	margin-left:0 !important;
+ }
+
+.statusWrapper button.modify {
+
+background: #5a5b5b !important;
+ }
+
+ .statusWrapper button.delete {
+
+background: red !important;
+ }
+
+.statusWrapper button.use {
+
+ }
+
+.statusWrapper button.useless {
+ 	background: #eeeeee !important;
+ 	color: #555 !important;
+ }
+
+  .tableManagement tbody td.function.noneLb .statusWrapper button {
+
+margin-left: 0;
+
+width: 125px;
+ }
+
+
+
+/* 사이드바 */
+
+.adminSidebar {
+	background: #ffffff;
+	width: 210px;
+	text-align:center;
+	min-height:805px;
+	float:left;
+	border-right:1px solid #eeeeee;
+}
+
+.adminSidebar .sideHeader {
+	background: #ffffff;
+	padding: 11.5px 0;
+	border-bottom:2px solid #eee;
+	width: 160px;
+	margin: 0px auto 4.5px auto;
+	text-align: left;
+	font-weight: 550;
+}
+
+.adminSidebar .sideHeader:first-of-type {
+  padding: 27.5px 0 11.5px 0;
+  border-bottom:0;
+}
+
+.adminSidebar .sideHeader span {
+	font-size: 18px;
+	font-weight: 550;
+}
+
+.adminSidebar .sideHeader span a {
+
+}
+
+.adminSidebar ul.inMenu {
+	background: #ffffff;
+	margin-bottom:0;
+	width: 170px;
+	margin: 10px auto;
+}
+
+.adminSidebar ul.inMenu > .active > a {
+	color:#1d8bcb;
+	font-weight:bold;
+}
+
+.adminSidebar ul.inMenu li {
+	padding: 8.5px 0;
+	text-align: left;
+}
+
+.adminSidebar ul.inMenu li:hover {
+		background:#f1f1f1;
+	border-radius:12.5px;
+}
+
+.adminSidebar ul.inMenu li a {
+	font-size: 17px;
+	color: #666;
+	padding-left:10px;
+}
+
+.adminWrap {
+
+background: #595858 !important;
+
+font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
+.adminWrap .container {
+  max-width:1440px;
+  width:auto;
+}
+
+.adminWrap .adminBody {
+
+float: left;
+
+width: calc(100% - 210px);
+
+background: #fafafa;
+
+padding: 48px;
+}
+
+
+
+
+
+
+/* */
+
+
+footer.footerWrap {
+
+background: #4d5058;
+
+padding: 25px 25px 35px 25px;
+
+clear: both;
+
+display: flex;
+
+align-items: center;
+}
+footer.footerWrap:after {
+	clear:both;
+	display:block;
+	content:"";
+}
+
+footer.footerWrap .logoWrap {float: left;max-width: 140px;margin-right: 45px;}
+
+footer.footerWrap .logoWrap img {
+
+max-width: 100%;
+
+height: auto;
+}
+
+
+footer.footerWrap .contentWrap {
+
+float: left;
+
+width: calc(100% - 185px);
+}
+
+footer.footerWrap .contentWrap p {
+
+margin-bottom: 0;
+color:#aab7bc;
+text-align: right;
+}
