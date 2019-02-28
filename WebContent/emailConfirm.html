@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/swal.css">
 	<title>샘플</title>
 	<style>
 			.select2-selection__rendered {
@@ -144,7 +145,7 @@
 									</select>
 								</div>
 								<div class="buttonWrap">
-									<button type="button">인증하기</button>
+									<button type="button" class="confirm">인증하기</button>
 								</div>
 							</div>
 						</div>
@@ -221,7 +222,10 @@
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>	
 		<script src="js/sweetalert2.all.min.js"></script>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 		<script src="js/source.js"></script>
 		<script>
@@ -241,6 +245,23 @@
 
 				}
 				});
+			});
+			
+			$(".confirm").on("click", function() {
+				swal({
+					title: "인증번호 입력",
+					input: 'text',
+					confirmButtonText: "인증확인"
+				}).then(function(result) {
+					if(result.value) {
+						swal({
+							title: "인증이 완료되었습니다.",
+							type: "success"
+						});
+					} else {
+						console.log("인증실패"); 
+					}
+				})
 			});
 		</script>
 </body>

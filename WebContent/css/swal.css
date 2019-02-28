@@ -18,7 +18,7 @@ div.swal2-popup .swal2-styled.swal2-confirm {
 	border-left-color: rgb(126, 180, 212);
     border-right-color: rgb(126, 180, 212);
     border-radius: 25px;
-    font-size: 19px;
+    font-size: 17px;
     background-color: #7eb4d4;
 }
 
@@ -57,4 +57,11 @@ div.swal2-icon.swal2-success .swal2-success-ring {
 
 div.swal2-icon.swal2-success .swal2-success-fix {
     height: 5.425em;	
+}
+
+div.swal2-popup .swal2-input {
+    width: 50%;
+    border: 1px solid #eae9e9;
+    box-shadow: 1px 1px 1px 1px rgba(181, 181, 181, 0);
+	text-align: center;
 }
