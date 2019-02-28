@@ -2454,7 +2454,7 @@ float: left;
  left: 0;
  right: 0;
  bottom: 0;
- background-color: rgba(0,0,0,0.30); /* Black background with opacity */
+ background-color: rgba(0,0,0,0.40); /* Black background with opacity */
  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
 }
 
@@ -2472,10 +2472,307 @@ float: left;
   font-weight:bold;
   font-size:45px;
   color:#fff;
+  display: inline-block;
+  letter-spacing: 2.2px;
+  text-shadow: 2px 2px 3px rgba(47, 46, 46, 0.83);
+}
+
+.introWrap .introText span {
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-shadow: 2px 2px 3px rgba(47, 46, 46, 0.83);
 }
 
 .introWrap .introText p {
   color:#fff;
   font-size:22px;
   line-height:40px;
+}
+
+/* 페이지 메인제목  */
+
+.mainTitle.b-bottom {
+    border-bottom: 1.4px solid #95989a;
+    margin-bottom: 20px;	
+}
+
+.mainTitle h2 {
+	float: left;
+    font-size: 27px;
+    padding-bottom: 10px;
+    margin: 0 0 5px;
+    color: #7eb4d6;
+    font-weight: bold;
+}
+
+/* 메인제목 옆 네비 */
+
+.smallNav {
+	text-align: right;
+    float: right;
+    padding-top: 12px;	
+}
+
+.smallNav i {
+	padding: 0 8px;
+    vertical-align: middle;
+}
+
+/* 튜터 소개페이지 */
+
+.subPImgBox {
+	padding-bottom: 20px;
+}
+
+.subPImgBox img {
+	/* width: 100%; */
+}
+
+.subPContentBox {
+    margin: 35px 0;
+    padding: 0 0 20px;
+}
+
+.subPContentBox:first-of-type {
+	margin-bottom: 50px;
+}
+
+.subPTitle {
+	position: relative;
+}
+
+.subPTitle:before {
+    content: "";
+    width: 35px;
+    height: 4px;
+    background: #7eb4d6;
+    /* position: absolute; */
+    /* top: -20px; */
+    display: block;	
+}
+
+.subPContentBox h2 {
+    font-size: 26px;
+    font-weight: bold;	
+}
+
+.subPTitle h2>b {
+    color: #7eb4d6;	
+}
+
+.subPContent p {
+    color: #222;	
+}
+
+.circleBox {
+    display: inline-block;
+    float: left;
+    background: #e9f5fb;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 27px;
+    width: 130px;
+    height: 130px;
+    padding-top: 20px;
+}
+
+.circleBox.another {
+	padding: 23px 27px;
+	margin: 0 0 0 27px;
+}
+
+.circleBox span {
+	line-height: 27px;
+	color: #7eb4d6;
+    font-weight: bold;
+}
+
+.circleBox span>b{
+	font-size: 19px;
+}
+
+.spanText {
+    top: calc(50% - 18.25px);
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    color: #7eb4d6;
+}
+
+.spanText.for {
+    left: calc(50% - 106.22px);
+}
+
+.spanText.equals {
+	right: calc(50% - 98.095px);
+}
+
+.squareRadiusBox {
+    border: 1px solid #7eb4d6;
+    padding: 25px 0px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 67%;
+	display: inline-block;
+    float: left;
+}
+
+.arrowBox {
+	/* position: relative; */
+}
+
+ .arrowBox span {
+    height: 40px;
+    width: 115px;
+    display: block;
+    position: absolute;
+    right: 63%;
+    top: calc(100% - 86px);
+    text-align: center;
+} 
+
+.arrow {
+	overflow:hidden; 
+	height:30px;
+    padding-top: 15px;
+}
+
+.arrow:before {
+	content:'';
+	height: 10px;
+	width: 10px;
+	display:block;
+	border: 1px solid #7eb4d6;
+	border-left-width:0;
+	border-top-width:0;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	position:absolute;
+	top: 8px;
+	right: 2px;
+}
+
+ .arrow:after {
+	 content:'';
+	 height: 1px;
+	 width: 120px;
+	 display:block;
+	 background: #7eb4d6;
+	 position:absolute;
+	 top:12px;
+	 left:0px;
+}
+
+.arrowBox b {
+    padding-right: 10px;
+    color: #7eb4d6;
+}
+
+.anotherCircle {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+
+.circleShell {
+    margin-left: 95px;
+    margin-top: 12px;
+    border: 1px solid #7eb4d6;
+    border-radius: 50%;
+}
+
+.circleBox.blue {
+    margin: 4px;
+    /* padding: 33px 36px; */
+    background: #7eb4d6;
+    padding-top: 35px;
+    width: 150px;
+    height: 150px;
+}
+
+.circleBox.blue span b {
+	color: #fff;
+	font-size: 20px;
+}
+
+.boxWrap {
+	margin: 30px 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.boxWrap.middle .circleBox{
+    padding-top: 50px;
+    margin: 0 30px 0 45px;
+}
+
+.boxWrap.middle.icon .circleBox {
+	padding-top: 40px;
+}
+
+.boxWrap.middle {
+	
+}
+
+.boxWrap.middle.icon .circleIconBox {
+	margin-bottom: 2px;
+}
+
+.boxWrap.middle .circleBox:first-of-type {
+	margin: 0 30px 0 0;
+}
+
+.miniIconBox {
+	display: inline-block;
+	float: left;
+	top: calc(100% - 107px);
+	position: absolute;
+	font-size: 20px;
+	color: #7eb4d6;
+}
+
+.basicCenterText {
+	display: inline-block;
+	float: left;
+	margin: 17px 45px;
+}
+
+.basicCenterText h2 {
+	text-align: center;
+    font-size: 22px;
+    line-height: 32px;	
+}
+
+.basicCenterText h2 b {
+	color: #7eb4d6;
+}
+
+.leftIconContent {
+	display: flex;
+    margin-bottom: 10px;
+}
+
+.leftIconContent .leftIconBox {
+	display: flex;
+	padding-right: 10px;
+}
+
+.subPContent.topBlank {
+	margin-top: 30px;
+}
+
+.leftIconContent p {
+	display: flex;
+}
+
+.smallText span {
+    font-size: 13px;
+    font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 }
