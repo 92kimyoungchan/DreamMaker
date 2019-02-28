@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/swal.css">
 	<title>샘플</title>
 	<style>
 
@@ -137,7 +138,7 @@
 				</div>
 			</div>
 			<div class="buttonWrap">
-				<button type="button">완료</button>
+				<button type="button" class="idFindSubmit">완료</button>
 			</div>
 		</div>
 			<div class="footerWrap">
@@ -207,7 +208,10 @@
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>	
 		<script src="js/sweetalert2.all.min.js"></script>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 		<script src="js/source.js"></script>
 		<script>
@@ -226,6 +230,14 @@
 
 
 				}
+				});
+			});
+			
+			$(".idFindSubmit").on("click", function() {
+				swal({
+					title: "가입하신 아이디는 \n dream***** 입니다.",
+					type: "success",
+					confirmButtonText: "확인"
 				});
 			});
 		</script>

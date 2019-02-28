@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/swal.css">
+	
 	<title>샘플</title>
 	<style>
 
@@ -116,7 +118,7 @@
 								<input type="text" id="" value="" name="" />
 							</div>
 							<div class="article">
-								<span>로그인</span>
+								<span class="loginSubmit">로그인</span>
 							</div>
 							<div class="function">
 								<p><a href="">회원가입</a></p>
@@ -193,11 +195,23 @@
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+  		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>	
 		<script src="js/sweetalert2.all.min.js"></script>
+		
 		<script src="js/source.js"></script>
 		<script>
 			$(function() {
 
+			});
+			
+			$(".loginSubmit").on("click", function() {
+				swal({
+					title: "아이디 및 비밀번호를 \n 정확하게 입력하세요.",
+					type: "error",
+					confirmButtonText: "확인"
+				});
+				
 			});
 		</script>
 </body>
