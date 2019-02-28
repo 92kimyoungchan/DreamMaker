@@ -1388,13 +1388,13 @@ color: #aab7bc;
 }
 /* 로그인  */
 
-#logIn .bgWrap , #confirm .bgWrap , #agree .bgWrap , #done .bgWrap {background: url(../images/mainBg.png);min-height: 710px; position:relative;}
+#logIn .bgWrap , #confirm .bgWrap , #agree .bgWrap , #done .bgWrap {background: url(../images/mainBg.png);min-height: 810px; position:relative;}
 
 #logIn .bgWrap .overlayWrap , #confirm .bgWrap .overlayWrap , #agree .bgWrap .overlayWrap , #done .bgWrap .overlayWrap {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(77, 121, 125, 0.29);
+  background: rgba(63, 94, 97, 0.39);
 }
 
 
@@ -1591,7 +1591,7 @@ text-align: center;
 #find .findWrap {
   position:relative;
   padding: 40px 60px;
-  box-shadow: 0px 1px 2.5px 1px #b6b6b6;
+  box-shadow: 0px 1px 6.5px 1px #d2c8c88a;
   min-height: 310px;
 }
 
@@ -1839,7 +1839,7 @@ outline: none;
 }
 
 
-.select2-selection__rendered {width: 100%;padding-left: 12px !important ;line-height: 34px !important;}
+.select2-selection__rendered {width: 100%;padding-left: 12px !important ;line-height: 34px !important; font-size:17px;}
 
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1869,7 +1869,7 @@ span.select2-selection__arrow b {border-width: 7px 6.5px 0 6.5px !important;marg
 text-align: right;
 font-size:14px;
 font-family:'Roboto' ,'Noto Sans KR', sans-serif;
-
+margin-bottom:6.5px;
 }
 
 #find p.other.etc b {
@@ -1882,7 +1882,7 @@ color: red;
 #confirm .emailConfirm {
   position: absolute;
   left: calc(50% - 348px);
-  top: calc(40% - 123.25PX);
+  top: calc(42.5% - 123.25PX);
 }
 
 
@@ -2143,7 +2143,7 @@ border-radius: 15px;
   position: absolute;
   width:830px;
   right:calc(50% - 415px);
-  top: calc(45% - 258.5px);
+  top: calc(52.5% - 258.5px);
 }
 .agree .content {
   margin-bottom: 30px;
@@ -2216,7 +2216,7 @@ width: 435px;
 
 right: calc(50% - 217.5px);
 
-top: calc(45% - 160px);
+top: calc(45% - 157.25px);
 }
 
 #done .joinDone .imgWrap {
@@ -2246,14 +2246,14 @@ text-align: center;
 
 #done .joinDone .buttonWrap {
 
-margin-top: 108px;
+margin-top: 102.5px;
 
 text-align: center;
 }
 
 #done .joinDone .buttonWrap button {
 
-width: 165px;
+width: 150px;
 
 height: 52px;
 
@@ -2263,13 +2263,13 @@ border-radius: 25px;
 
 background: #fff;
 
-box-shadow: 0.5px 2px 18px 0px #0c0c0c45;
+box-shadow: 0.5px 2px 3.5px 0px #0c0c0c45;
 
-font-weight: 500;
+font-weight: 550;
 
 font-size: 17px;
 
-margin-right: 67.5px;
+margin-right: 64.5px;
 }
 
 #done .joinDone .buttonWrap button.active {
@@ -2359,7 +2359,7 @@ float: left;
 }
 
 .labelRadio .checkmark:after {
-	top: 4.5px;
+	top: 4px;
 	left: 4px;
 	width: 14px;
 	height: 14px;
