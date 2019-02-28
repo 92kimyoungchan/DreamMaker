@@ -2495,7 +2495,6 @@ float: left;
   line-height:40px;
 }
 
-<<<<<<< HEAD
 /* 페이지 메인제목  */
 
 .mainTitle.b-bottom {
@@ -2636,7 +2635,7 @@ float: left;
     display: block;
     position: absolute;
     right: 63%;
-    top: calc(100% - 86px);
+    top: calc(100% - 96px);
     text-align: center;
 } 
 
@@ -2766,7 +2765,6 @@ float: left;
 }
 
 .leftIconContent .leftIconBox {
-	display: flex;
 	padding-right: 10px;
 }
 
@@ -2774,13 +2772,18 @@ float: left;
 	margin-top: 30px;
 }
 
-.leftIconContent p {
-	display: flex;
+.leftIconContent .detail {
 }
 
-.smallText span {
-    font-size: 13px;
+.leftIconContent p {
+	padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.leftIconContent .detail span {
+    font-size: 14px;
     font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
 
 .alone div.titleArea , .alone .titleSmall {
 	text-align:left;
@@ -2972,5 +2975,35 @@ input.inputDate {
 .detail .content .labelCheck.active {
 	background:#7EB4d6;
 	color:#fff;
+}
 
+.buttonBox {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;	
+}
+
+.buttonBox .downBtn {
+    padding: 12px 22px;
+    border: 1px solid #7eb4d6;
+    background: #fff;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 5px;	
+}
+
+.buttonBox .requestBtn {
+    padding: 12px 22px;
+    border: 1px solid #7eb4d6;
+    background: #7eb4d6;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.buttonBox button:last-of-type {
+	margin-right: 0;
 }
