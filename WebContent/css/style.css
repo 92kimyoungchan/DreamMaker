@@ -2430,6 +2430,11 @@ float: left;
   min-height:803px;
 }
 
+.main.alone {
+	float:nono;
+	width:100%;
+}
+
 /* 인트로박스 */
 .introWrap {
   position:relative;
@@ -2476,4 +2481,196 @@ float: left;
   color:#fff;
   font-size:22px;
   line-height:40px;
+}
+
+.alone div.titleArea , .alone .titleSmall {
+	text-align:left;
+}
+
+.alone div.titleArea span.pageTitle {
+	padding:6.5px 0px;
+}
+div.titleArea {
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+}
+.titleSmall {
+	text-align:center;
+}
+.titleSmall span {
+	font-size:15px;
+	color:#2d2d2d;
+	text-transform:uppercase;
+}
+
+div.titleArea span.pageTitle {
+	color:#1d8bcb;
+	font-size:36px;
+	font-weight:bold;
+	letter-spacing:-0.4px;
+	margin:0 0 20px;
+	padding:6.5px 30px;
+	text-align:center;
+	background:#fff;
+	
+}
+.writeWrap {
+	
+max-width: 755px;
+	
+margin: 35px 0;
+	
+border: 1px solid #b6b6b6;
+}
+
+
+
+.buttonWrap.write {
+	
+max-width: 755px;
+	
+margin: 35px 0;
+	
+text-align: center;
+}
+
+.buttonWrap.write  button {
+	
+width: 125px;
+	
+height: 43px;
+	
+background: #f6f6f6;
+	
+border: none;
+	
+border-radius: 25px;
+	
+color: #333;
+	
+font-size: 17px;
+	
+margin-right: 25px;
+}
+
+.buttonWrap.write button:last-of-type {
+	margin-right:0;
+}
+.buttonWrap.write  button.modify {
+	
+background: #7eb4d6;
+	
+color: #fff;
+}
+
+
+.writeWrap .article {
+	
+display: flex;
+}
+
+.writeWrap .article label {
+	
+margin-bottom: 0;
+	
+font-size: 17px;
+	
+width: 205px;
+	
+padding: 0 22.5px;
+	
+line-height: 51px;
+	
+background: #7eb4d6;
+	
+color: #fff;
+}
+
+.writeWrap .article .detail {width: calc(100% - 205px);padding: 8.5px 0 8.5px 35px;}
+
+.writeWrap .article .detail input {
+	
+min-height: 34px;
+	
+min-width: 205px;
+	
+padding-left:12px;
+	
+border: 1px solid #b6b6b6;
+	
+font-size: 17px;
+}
+
+.writeWrap .article .detail span {
+	line-height:34px;
+	font-size:17px;
+}
+
+.writeWrap .article .detail textarea {
+	
+min-width: 480px;
+padding-left:12px;
+min-height: 85px;
+
+}
+
+.writeWrap .article .detail .inputWrap {
+	
+float: left;
+	
+margin-right: 15px;
+ resize: vertical; /* 상하만 가능 */
+}
+.writeWrap .article .detail .inputWrap input {
+	
+width: 155px;
+	
+min-width: auto;
+}
+
+.writeWrap .article .detail .inputWrap:last-of-type {
+	margin: 0;
+}
+
+input.inputDate {
+			background: url(../images/calendar.png);
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+
+/* 체크박스 */
+
+.labelCheck input[type="checkbox"] {
+	display:none;
+} 
+
+.labelCheck {
+	
+	font-size:17px;
+	
+	margin-bottom:0;
+}
+.detail .content  {
+	float:left;
+	
+}
+.detail .content .labelCheck {
+	float:left;
+	width:66px;
+	height:38px;
+	text-align:center;
+	line-height:38px;
+	background:transparent;
+	color:#333;
+	cursor:pointer;
+	
+}
+
+.detail .content .labelCheck.active {
+	background:#7EB4d6;
+	color:#fff;
 }
