@@ -185,7 +185,7 @@
 		<div class="introWrap">
 			<div class="introImgBox">
 				<div class="overlay"></div>
-				<img src="images/intro/intro-bg.png" alt="" />
+				<img src="images/intro/intro-bg-01.png" alt="" />
 
 			</div>
 
@@ -221,9 +221,9 @@
 							<h2>엔젤튜터(Angel Tutor) 소개</h2>
 
 							<div class="smallNav">
-								<a href=""><i class="fas fa-home"></i>홈</a> <a href=""><i
-									class="fas fa-angle-right"></i>튜터</a> <a href=""><i
-									class="fas fa-angle-right"></i>엔젤튜터 소개</a>
+								<a href=""><i class="fas fa-home"></i>홈</a> 
+								<a href=""><i class="fas fa-angle-right"></i>튜터</a> 
+								<a href="" id="intro"><i class="fas fa-angle-right"></i>엔젤튜터 소개</a>
 							</div>
 						</div>
 
@@ -539,6 +539,10 @@
 				</div>
 
 			</div>
+			
+			<div class="topScroll">
+				<img src="images/top.png" alt="" />
+			</div>
 
 
 
@@ -634,6 +638,8 @@
 	<script src="js/source.js"></script>
 	<script>
 		$(function() {
+			
+			$("#intro").addClass("active");
 
 			var height = $(
 					'.promotion .overlayWrap .overlay .imgSet .imgWrap img')
@@ -659,6 +665,22 @@
 
 			});
 
+		});
+		
+		var $topScroll = $(".topScroll");
+		var $delay = 1000;
+		
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 700) {
+				$topScroll.fadeIn();
+			} else {
+				$topScroll.fadeOut();
+			}
+		});
+		
+		
+		$topScroll.on("click", function() {
+			$("html, body").stop().animate({scrollTop: 0}, $delay);
 		});
 	</script>
 </body>

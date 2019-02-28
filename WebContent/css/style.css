@@ -2403,23 +2403,25 @@ float: left;
 }
 .xSidebar ul li {
   padding:18px 20px;
-  border:0px solid #d9d4d4;
+  border:0px solid #e1e1e1;
   border-width:0 1px 1px 1px;
 }
 
 .xSidebar ul li.active {
-  background: #ddeef9;
+  background: #edf4f9;
 }
 
 .xSidebar ul li.active a {
+  font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
   color: #7eb4d6 !important;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .xSidebar ul li a {
-  color:#222222;
-  font-size: 17px;
+  font-family: 'Roboto' ,'Noto Sans KR', sans-serif;	
+  color: #3b3b3b;
+  font-size: 16px;
 }
 
 .mainWrap {
@@ -2473,38 +2475,44 @@ float: left;
 }
 
 .introWrap .introText h2 {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight:bold;
-  font-size:45px;
+  font-family: 'NanumSquare';
+  font-weight: bold;
+  font-size:50px;
   color:#fff;
   display: inline-block;
   letter-spacing: 2.2px;
-  text-shadow: 2px 2px 3px rgba(47, 46, 46, 0.83);
+  text-shadow: 2px 2px 3px rgba(76, 76, 76, 0.83);
+  margin-bottom: 0;
 }
 
 .introWrap .introText span {
-    font-size: 26px;
+    font-family: 'NanumSquare';
+    font-size: 30px;
+    font-weight: bold;
     color: #fff;
     letter-spacing: 1.2px;
     text-shadow: 2px 2px 3px rgba(47, 46, 46, 0.83);
 }
 
 .introWrap .introText p {
+  font-family: 'NanumSquare';
   color:#fff;
-  font-size:22px;
+  font-size:20px;
+  font-weight: bold;
   line-height:40px;
 }
 
 /* 페이지 메인제목  */
 
 .mainTitle.b-bottom {
-    border-bottom: 1.4px solid #95989a;
+    border-bottom: 1.4px solid #3B3B3B;
     margin-bottom: 20px;	
 }
 
 .mainTitle h2 {
+	font-family: 'Noto Sans KR', sans-serif;
 	float: left;
-    font-size: 27px;
+    font-size: 32px;
     padding-bottom: 10px;
     margin: 0 0 5px;
     color: #7eb4d6;
@@ -2516,12 +2524,21 @@ float: left;
 .smallNav {
 	text-align: right;
     float: right;
-    padding-top: 12px;	
+    padding-top: 20px;	
 }
 
 .smallNav i {
 	padding: 0 8px;
     vertical-align: middle;
+}
+
+.smallNav a {
+	font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
+
+.smallNav a.active {
+	color: #3B3B3B;
+	font-weight: bold;
 }
 
 /* 튜터 소개페이지 */
@@ -2558,8 +2575,9 @@ float: left;
 }
 
 .subPContentBox h2 {
-    font-size: 26px;
-    font-weight: bold;	
+    font-size: 24px;
+    font-weight: bold;
+	color: #3b3b3b;
 }
 
 .subPTitle h2>b {
@@ -2567,7 +2585,9 @@ float: left;
 }
 
 .subPContent p {
-    color: #222;	
+    color: #222;
+	font-size: 16px;
+    font-family: 'Roboto' ,'Noto Sans KR', sans-serif;	
 }
 
 .circleBox {
@@ -2591,10 +2611,12 @@ float: left;
 	line-height: 27px;
 	color: #7eb4d6;
     font-weight: bold;
+    font-size: 12px;
+	font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 }
 
 .circleBox span>b{
-	font-size: 19px;
+    font-size: 16px;
 }
 
 .spanText {
@@ -2677,6 +2699,8 @@ float: left;
 .arrowBox b {
     padding-right: 10px;
     color: #7eb4d6;
+    font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+    font-size: 16px;
 }
 
 .anotherCircle {
@@ -2737,7 +2761,7 @@ float: left;
 .miniIconBox {
 	display: inline-block;
 	float: left;
-	top: calc(100% - 107px);
+	top: calc(100% - 105px);
 	position: absolute;
 	font-size: 20px;
 	color: #7eb4d6;
@@ -2751,8 +2775,9 @@ float: left;
 
 .basicCenterText h2 {
 	text-align: center;
-    font-size: 22px;
-    line-height: 32px;	
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 .basicCenterText h2 b {
@@ -2781,7 +2806,7 @@ float: left;
 }
 
 .leftIconContent .detail span {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 }
 
@@ -2988,17 +3013,17 @@ input.inputDate {
     border: 1px solid #7eb4d6;
     background: #fff;
     border-radius: 7px;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
     margin-right: 5px;	
 }
 
 .buttonBox .requestBtn {
-    padding: 12px 22px;
+    padding: 12px 27px;
     border: 1px solid #7eb4d6;
     background: #7eb4d6;
-    border-radius: 7px;
-    font-size: 17px;
+    border-radius: 10px;
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
     margin-right: 5px;
@@ -3006,4 +3031,72 @@ input.inputDate {
 
 .buttonBox button:last-of-type {
 	margin-right: 0;
+}
+
+/* 튜티 소개 페이지 */
+.squareRadiusBox.full {
+	width: 100%;
+    padding: 25px 50px;
+    margin-bottom: 12px;
+}
+
+.squareRadiusBox.full .anotherCircle .circleShell {
+	margin: 0;
+}
+
+.squareRadiusBox.full .circleBox {
+    margin: 15px 55px;	
+}
+
+.squareRadiusBox.full .circleBox span > b {
+    font-size: 18px;	
+}
+
+.squareRadiusBox.full .spanText.for {
+    left: calc(50% - 133.75px);	
+}
+
+.squareRadiusBox.full .spanText.equals{
+    right: calc(50% - 105px);
+}
+
+.squareRadiusBox.full .circleBox.blue {
+	margin: 4px;
+	padding-top: 45px;
+}
+
+.remark p {
+    text-align: center;
+    color: #7eb4d6;
+    font-weight: bold;	
+}
+
+.circleBox.middle {
+	padding-top: 50px;
+}
+
+.squareRadiusBox.full .basicCenterText {
+    float: none;
+    display: inherit;
+    margin: 17px 45px;
+    padding-top: 20px;	
+}
+
+.boxWrapContent {
+	border: 1px solid #7eb4d6;
+    padding: 15px 30px 0px;
+    border-radius: 50px;
+    margin-bottom: 70px;
+}
+
+.boxWrapContent .detail p {
+	color: #3b3b3b;	
+}   
+
+.topScroll {
+    position: fixed;
+ 	bottom: 20px;
+    right: 2%;
+    display: none;
+    cursor: pointer;
 }
