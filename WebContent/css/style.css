@@ -3130,6 +3130,7 @@ input.inputDate {
     font-size: 22px;
     font-weight: bold;
     margin-right: 5px;
+    min-width: 223.38px;
 }
 
 .buttonBox .requestBtn {
