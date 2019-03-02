@@ -1,6 +1,6 @@
 
 
-/* 헤더존 */
+/* í—¤ë”ì¡´ */
 .adminNavWrapper {
 	background:white;
 	padding: 10px 0 0;
@@ -13,7 +13,7 @@
 
 .adminNavWrapper .adminStatusWrapper {
 
-padding: 0 20px 0px 20px;
+padding: 0 48px 0px 48px;
 }
 
 .adminStatusWrapper .adminStatus {
@@ -23,6 +23,19 @@ padding: 0 20px 0px 20px;
 .adminStatusWrapper .adminStatus span {
 	margin-right: 15px;
 	font-size: 17px;
+	position:relative;
+	padding-left: 10px;
+}
+
+.adminStatusWrapper .adminStatus span:before {
+	position:absolute;
+	content:"";
+	width: 3px;
+	height: 18px;
+	top: 0.75px;
+	background: #7EB4d6;
+	left: 0px;
+	border-radius: 25px;
 }
 
 .adminStatusWrapper .adminStatus span b {
@@ -33,6 +46,18 @@ padding: 0 20px 0px 20px;
 	margin:0 6.5px;
 	padding:6.5px 10px;
 	font-size: 17PX;
+		position:relative;
+}
+
+.adminStatusWrapper .adminStatus a:before {
+	position:absolute;
+	content:"";
+	width: 3px;
+	height: 17px;
+	top: 7.5px;
+	background: #7EB4d6;
+	left: 0px;
+	border-radius: 25px;
 }
 
 .adminStatusWrapper .adminStatus a:hover {
@@ -89,19 +114,19 @@ margin: 25px 0 55px;
 
 
 
-/* 테이블 */
+/* í…Œì´ë¸” */
 
-/* 테이블 */
+/* í…Œì´ë¸” */
 
 .tableManagement {
-	border-top: 1px solid #d9d4d4;
+	border:0 !important;
 }
 
 .adminTableWrap table {
     width: 100%;
     margin-bottom: 20px;
 
-    border:1px solid #c1c1c1;
+    border:1px solid #d9d4d4;
 
 }
 
@@ -110,8 +135,8 @@ margin: 25px 0 55px;
 }
 
 .tableManagement thead {
-	background-color: #eeeeee;
-	border-top: 2px solid #1d8bcb;
+	background-color: #edf4f9;
+	border-top: 2px solid #b6b6b6;
 }
 
 .tableManagement thead > tr {
@@ -122,7 +147,12 @@ margin: 25px 0 55px;
 }
 
 .tableManagement thead th:nth-child(1){
+	border-left:0;
 
+}
+
+.tableManagement thead th:last-of-type{
+	border-right:0;
 
 }
 .tableManagement thead th{
@@ -140,11 +170,18 @@ letter-spacing: -1px;
 border-right: 1px solid #d9d4d4;
 
 color: #666;
+
+font-weight:550;
 }
 
 .tableManagement tbody td:nth-child(1) {
-
+		border-left:0;
 }
+
+.tableManagement tbody td:last-of-type {
+		border-right:0;
+}
+
 
 .tableManagement tbody td {
 	font-size: 18px;
@@ -159,6 +196,10 @@ color: #666;
 	font-size: 14.5px;
 }
 
+
+.tableManagement tbody td.point {
+		color:#3b3b3b;
+}
 
  .tableManagement tbody td.function {
 
@@ -233,7 +274,7 @@ width: 125px;
 
 
 
-/* 사이드바 */
+/* ì‚¬ì´ë“œë°” */
 
 .adminSidebar {
 	background: #ffffff;
@@ -265,7 +306,7 @@ width: 125px;
 }
 
 .adminSidebar .sideHeader span a {
-
+	color:#7eb4d6;
 }
 
 .adminSidebar ul.inMenu {
@@ -366,4 +407,389 @@ footer.footerWrap .contentWrap p {
 margin-bottom: 0;
 color:#aab7bc;
 text-align: right;
+}
+
+
+/* admin í…Œì´ë¸”*/
+
+
+.adminTableWrap {
+
+border-top: 2px solid #b6b6b6;
+}
+.tableManagement {
+	border:0 !important;
+}
+
+.adminTableWrap table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    border:1px solid #d9d4d4;
+
+}
+
+.adminTableWrap table thead {
+
+background: #f7fafc;
+
+border-top: 0;
+}
+
+.adminTableWrap table thead th {
+
+color: #3b3b3b;
+}
+
+.adminTableWrap .tableManagement tr:last-of-type {
+}
+
+.tableManagement tr{
+	border-bottom: 1px solid #d9d4d4;
+}
+
+.tableManagement thead {
+	background-color: #edf4f9;
+	border-top: 2px solid #b6b6b6;
+}
+
+.tableManagement thead > tr {
+
+	}
+.adminTableWrap table > tbody {
+
+}
+
+.tableManagement thead th:nth-child(1){
+	border-left:0;
+
+}
+
+.tableManagement thead th:last-of-type{
+	border-right:0;
+
+}
+.tableManagement thead th{
+
+border-left: 1px solid #d9d4d4;
+
+text-align: center;
+
+padding: 10px 0px;
+
+font-size: 16px;
+
+letter-spacing: -1px;
+
+border-right: 1px solid #d9d4d4;
+
+color: #666;
+
+font-weight:550;
+}
+
+.tableManagement tbody td:nth-child(1) {
+		border-left:0;
+}
+
+.tableManagement tbody td:last-of-type {
+		border-right:0;
+}
+
+
+.tableManagement tbody td {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	color: #666;
+	/* letter-spacing: -0.4px; */
+	line-height: 30px;
+	border-left: 1px solid #d9d4d4;
+	border-right: 1px solid #d9d4d4;
+	padding: 10.5px;
+	font-size: 14.5px;
+}
+
+.tableManagement tbody td.num {
+	width:65px;
+}
+
+
+
+
+.tableManagement tbody td.point {
+		color:#3b3b3b;
+}
+
+ .tableManagement tbody td.function {
+	width:145px;
+	min-width:auto;
+ }
+
+ .tableManagement tbody td.function span {
+
+ }
+
+ .tableManagement tbody td.function span i {
+
+ }
+
+
+ .tableManagement tbody td.function.noneLb {
+
+ }
+
+  .tableManagement tbody td.function .statusWrapper {
+
+ }
+
+  .tableManagement tbody td.function .statusWrapper label {
+
+margin-bottom: 0;
+
+line-height: 31px;
+
+margin-right: 15px;
+ }
+
+  .tableManagement tbody td.function .statusWrapper button {
+
+height: 31px;
+
+width: 80px;
+
+border: none;
+
+background: #1d8bcb;
+
+color: white;
+
+margin-left: 15px;
+
+
+ }
+
+ .tableManagement tbody td.function .statusWrapper button.player {
+ 	min-width:110px;
+ }
+
+ .tableManagement tbody td.function .statusWrapper button:nth-of-type(1) {
+ 	margin-left:0 !important;
+ }
+
+.statusWrapper button.modify {
+
+background: #5a5b5b !important;
+ }
+
+ .statusWrapper button.delete {
+
+background: red !important;
+ }
+
+.statusWrapper button.use {
+
+ }
+
+.statusWrapper button.useless {
+ 	background: #eeeeee !important;
+ 	color: #555 !important;
+ }
+
+  .tableManagement tbody td.function.noneLb .statusWrapper button {
+
+margin-left: 0;
+
+width: 125px;
+ }
+
+ .smsWrap {
+
+border: 1px solid #E1E1E1;
+
+background: #f2f2f2;
+
+padding: 15px 45px 15px;
+
+margin-top: 30px;
+}
+
+ .smsWrap .smsContent {
+
+float: left;
+
+width: calc(100% - 450px);
+}
+
+ .smsWrap .smsContent .articleWrap {
+
+max-width: 755px;
+
+margin: 35px 0;
+}
+
+ .smsWrap .smsContent .articleWrap .article {
+
+display: flex;
+}
+
+ .smsWrap .smsContent .articleWrap .article label {
+
+text-align: left;
+
+margin-bottom: 0;
+
+font-size: 14px;
+
+width: 105px;
+
+padding: 0;
+
+line-height: 51px;
+
+background: transparent;
+
+font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+
+color: #3b3b3b;
+}
+
+ .smsWrap .smsContent .articleWrap .article .detail {
+
+padding: 8.5px 0 8.5px 35px;
+
+width: calc(100% - 105px);
+}
+
+.smsWrap .smsContent .articleWrap .article .detail span.checkmark {
+
+top: 5px;
+}
+.smsWrap .smsContent .articleWrap .article .detail .labelRadio span.other {
+
+margin-left: 35px;
+
+line-height: 34px;
+}
+
+.smsWrap .smsContent .articleWrap .article .detail .consent {
+	width:105px;
+}
+
+.smsWrap .smsContent .articleWrap .article .detail .consent label {
+	line-height: 34px;
+	width: 125px;
+}
+ .smsWrap .smsContent .articleWrap .article .detail .consent {
+
+float: left;
+
+}
+
+ .smsWrap .smsContent .articleWrap .article .detail .selectContainer {
+
+ }
+
+ .smsWrap .smsContent .articleWrap .article .detail textarea {
+min-width: 320px;
+padding-left:12px;
+min-height: 182px;
+resize: vertical;
+}
+
+  .smsWrap .smsContent .receiver {
+
+	}
+
+	.smsWrap .smsContent .receiver h2.title {
+
+margin: 0 0 15px 0;
+
+font-size: 17px;
+
+padding-bottom: 0;
+
+color: #3b3b3b;
+
+font-weight: 550;
+}
+
+	.smsWrap .smsContent .receiver p {
+
+margin-bottom: 0;
+
+font-size: 15px;
+
+font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
+
+	.smsWrap .smsContent .receiver .adminTableWrap {
+
+margin-top: 15px;
+
+min-height: 200px;
+
+border-top: 2px solid #b6b6b6;
+
+border-bottom: 2px solid #b6b6b6;
+
+border-right: 1px solid #b6b6b6;
+
+border-left: 1px solid #b6b6b6;
+}
+
+	  .smsWrap .smsView {
+
+width: 315px;
+
+float:left;
+
+background: url(../images/smsContext.png);
+
+height:503px;
+
+position:relative;
+
+background-size: cover;
+
+margin-left: 135px;
+}
+
+		.smsWrap .textWrap {
+
+top: calc(50% - 175px);
+
+position:absolute;
+
+transform:translateX(-50%);
+
+left:50%;
+
+}
+
+		.smsWrap .textWrap textarea {
+
+height: 350px;
+
+width:200px;
+
+padding:15px;
+
+border:none;
+
+resize:none;
+
+border-radius: 6.5px;
+
+box-shadow: 0px 1px 1px rgba(132, 132, 132, 0.52);
+}
+
+	.smsWrap  .select2-selection__rendered {
+	font-size:14px;
+
+	font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
+
+	.smsWrap  .select2-container .select2-selection--single {
+		background:#fff;
 }

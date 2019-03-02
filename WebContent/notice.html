@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="UTF-8">
 <meta charset="utf-8">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -8,17 +9,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
 	<link rel="stylesheet" href="fonts/iconsmind.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/swal.css">
 	<title>샘플</title>
 	<style>
 
 	</style>
 </head>
+
 <body>
 	<div class="bodyInner">
 		<div class="headerWrap">
@@ -173,53 +175,95 @@
 				</div>
 			</header>
 		</div>
-		<div class="bodyWrap" id="find">
-			<div class="container">
-
-
-			<div class="explain">
-			  <h2>아이디 찾기</h2>
-				<p>아이디를 잊어버리셨나요?</p>
-				<p>이메일 인증을 통해 찾아보실 수 있습니다.</p>
-
+		<div class="introWrap">
+			<div class="introImgBox">
+				<div class="overlay"></div>
+				<img src="images/intro/mypageBg.png" alt="">
 			</div>
-			<p class="other etc"><b>*</b> 표시항목은 필수 입력 항목입니다.</p>
-
-			<div class="findWrap">
-				<h2>아이디 찾기</h2>
-				<div class="articleSet">
-					<div class="article">
-						<label>이름</label>
-						<div class="detail">
-							<input class="normal" type="text" value="" name="" />
-						</div>
-					</div>
-					<div class="article">
-						<label>이메일</label>
-						<div class="detail">
-							<input type="text" value="" name="" /><span class="separate">@</span><input type="text" value="" name="" class="emailFilter" />
-							<div class="selectContainer">
-								<select class="js-example-basic-single" id="" name="">
-									<option value="0">직접입력</option>
-									<option value="1">daum.net</option>
-									<option value="2">naver.com</option>
-								</select>
-							</div>
-							<div class="buttonWrap">
-								<button type="button">인증하기</button>
-							</div>
-							<p class="warn">- 가입 계정에 등록된 이메일을 정확히 입력해 주세요.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="buttonWrap">
-				<button type="button" class="idFindSubmit">완료</button>
+			<div class="introText">
+				<h2>소식</h2>
+				<span>News</span>
+				<p>드림메이커의 소식입니다.</p>
 			</div>
 		</div>
+		<div class="bodyWrap">
+		<div class="mainWrap">
+			<div class="container">
+				<div class="xSidebar">
+					<div class="xSidebarHeader">
+						<span>소식</span>
+					</div>
+					<ul id="">
+						<li class="active"><a href="notice.html">공지사항</a></li>
+						<li class=""><a href="">자주묻는질문</a></li>
+						<li class=""><a href="">문의하기</a></li>
+
+					</ul>
+				</div>
+				<div class="main">
+					<div class="mainTitle b-bottom with">
+							<h2>공지사항</h2>
+							<div class="smallNav">
+								<a href=""><i class="fas fa-home"></i>홈</a> <a href=""><i class="fas fa-angle-right"></i>보기</a> <a href="" id="intro" class="active"><i class="fas fa-angle-right"></i>공지사항</a>
+							</div>
+						</div>
+							<!--<div class="excelWrap">
+									<span>엑셀다운로드<i class="fas fa-download"></i></span>
+							</div>-->
+							<div class="tableWrap">
+					<table class="boardTable">
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>등록일</th>
+								<th>조회수</th>
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>튜티와 튜터시스템을 알려드립니다.</td>
+								<td>관리자</td>
+								<td>2019-03-02</td>
+								<td>1</td>
+
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>드림메이커 정책에 대해 알려드립니다.</td>
+								<td>관리자</td>
+								<td>2019-03-02</td>
+								<td>0</td>
+
+							</tr>
+
+
+						</tbody>
+					</table>
+				</div>
+				<div class="searchWrap">
+					<div class="selectContainer">
+						<select class="js-example-basic-single" id="" name="">
+							<option value="0">정렬</option>
+							<option value="1">글제목</option>
+							<option value="2">작성자</option>
+						</select>
+					</div>
+					<div class='inputWrap'>
+						<input type="text"  placeholder="검색어를 입력해주세요"/>
+						<button type="button">검색</button>
+					</div>
+				</div>
+
+				</div>
+		</div>
+			</div>
 			<div class="footerWrap">
 				<footer>
-
 						<div class="mainPreserve">
 							<div class="hyperLinkWrap">
 								<div class="container">
@@ -282,40 +326,107 @@
 				</footer>
 			</div>
 		</div>
+		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-		<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>
-		<script src="js/sweetalert2.all.min.js"></script>
-
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 		<script src="js/source.js"></script>
+
 		<script>
 			$(function() {
-			$('.js-example-basic-single').select2();
-				$('.selectContainer select').on("change", function(){
-					var text =$(this).find("option[value='" + $(this).val() + "']").text();
-					console.log("text",text);
-					if(text!="직접입력"){
-					$('input.emailFilter').val(text);
-				}else {
-					$('input.emailFilter').val("");
-					setTimeout(function(){
-  $('input.emailFilter').focus();
-});
+$('.js-example-basic-single').select2();
+				var height = $('.promotion .overlayWrap .overlay .imgSet .imgWrap img').height();
+				var heightSu = height + 'px';
+						$('.promotion .overlayWrap .overlay .imgSet span.between').css('line-height',heightSu);
+
+						$("#mainCarousel").owlCarousel({
+
+					      navigation : false, // Show next and prev buttons
+					      slideSpeed : 300,
+					      lazyLoad : true,
+					      paginationSpeed : 400,
+					      loop:true,
+					      dots:true,
+					      dotsEach:true,
+					      singleItem : true,
+					      autoplay:true,
+					      autoplayTimeout:5000,
+					      autoplayHoverPause:true,
+					      items : 1
+
+					    });
+
+						$('.detail .content .labelCheck').on('click',function() {
+							var inputid = $(this).attr('for');
+							var flag = $("input[type='checkbox'][id='"+inputid+"']").is(':checked');
 
 
-				}
-				});
+
+							/*	라벨 클릭시 DOM 보다 jquery가 먼저 동작해서 반대로 나옴*/
+							if(flag){
+										$(this).addClass('active');
+							}else{
+
+								$(this).removeClass('active');
+							}
+						});
+
+						$('.detail .evaluate .wrap .tile').on('click',function() {
+							if($(this).hasClass('active')){
+								console.log("삭제");
+								$(this).removeClass('active');
+							}else {
+								console.log("추가");
+							$(this).addClass('active');
+							}
+						});
+
+
+						$('.inputDate').datepicker({
+										 dateFormat: "yy-mm-dd",
+										 regional: "ko",
+										 mode: "multiple",
+										 constrainInput: false,
+										 showMonthAfterYear: true,
+										 dayNames: ["일요일", "월요일", "화요일","수요일", "목요일", "금요일", "토요일"],
+										 dayNamesMin: ["일", "월", "화", "수","목", "금", "토"],
+										 dayNamesShort: ["일", "월", "화", "수","목", "금", "토"],
+										 monthNames: ["1월", "2월", "3월", "4월","5월", "6월", "7월", "8월", "9월","10월", "11월", "12월"]
+									});
+
+
+						  $('.inputDate').datepicker({
+				               dateFormat: "yy-mm-dd",
+				               regional: "ko",
+				               mode: "multiple",
+				               constrainInput: false,
+				               showMonthAfterYear: true,
+				               dayNames: ["일요일", "월요일", "화요일","수요일", "목요일", "금요일", "토요일"],
+				               dayNamesMin: ["일", "월", "화", "수","목", "금", "토"],
+				               dayNamesShort: ["일", "월", "화", "수","목", "금", "토"],
+				               monthNames: ["1월", "2월", "3월", "4월","5월", "6월", "7월", "8월", "9월","10월", "11월", "12월"]
+				            });
+
+
+										var fileTarget = $('.fileWrap .upload-hidden');
+										fileTarget.on('change', function(){
+                       if(window.FileReader){
+												 var filename = $(this)[0].files[0].name;
+											 }
+											 else {
+												 var filename = $(this).val().split('/').pop().split('\\').pop();
+											 }
+											  $(this).siblings('.uploadName').val(filename);
+											});
+
+
 			});
 
-			$(".idFindSubmit").on("click", function() {
-				swal({
-					title: "가입하신 아이디는 \n dream***** 입니다.",
-					type: "success",
-					confirmButtonText: "확인"
-				});
-			});
+
+
 		</script>
 </body>
+
 </html>
