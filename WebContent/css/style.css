@@ -3130,7 +3130,6 @@ input.inputDate {
     font-size: 22px;
     font-weight: bold;
     margin-right: 5px;
-    min-width: 223.38px;
 }
 
 .buttonBox .requestBtn {
@@ -4066,6 +4065,22 @@ font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 	font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 }
 
+.boardTable tbody td.title {
+	
+}
+
+.boardTable tbody td.title span {
+	
+}
+
+.boardTable tbody td.title span.iconWrap {
+	margin-left:10px;
+}
+
+.boardTable tbody td.title span.iconWrap i {
+	color:#7eb4d6;
+}
+
 
 .boardTable tbody td.point {
 		color:#3b3b3b;
@@ -4195,4 +4210,115 @@ color: #fff;
 font-weight: 550;
 
 font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+}
+
+/* accordian  */
+div.accordian {
+	border-bottom: 1px solid #ddd;
+	padding: 15px 3px;
+	/*  아코디언  */
+	cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+}
+.accordian.start.accordian_select .questionContent {
+    color: white !important;
+}
+
+div.accordian:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+div.accordian.start {
+	border-top: 2px solid black;
+}
+
+div.accordian .question {
+   font-size: 20px;
+   font-weight: bold;
+   word-spacing: 0.5px;
+   margin: -2px 11px 0px 6px;
+   padding-right: 13px;
+   float: left;
+}
+div.accordian .questionContent {
+	margin: 0;
+	font-weight: bold;
+	float: left;
+	font-size: 20px;
+}
+
+div.accordian i {
+	/* float: right; */
+	position: absolute;
+    right: 20px;
+	margin: 7px 3px 0 0;
+	font-size: 17px;
+	cursor: pointer;
+	 /* doyoung */
+	transition: all 0.3s ease-out;
+}
+
+div.accordianContent {
+	padding: 5px 10px;
+
+	display:none;
+
+	background-color: #eef2f5;
+}
+
+div.accordianContent:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+div.accordianContent .answer {
+   float: left;
+   font-size: 23px;
+   font-weight: bold;
+   color: #1d8bcb;
+   margin: 17px 0px 0px 12px;
+   padding-left: 4px;
+}
+
+div.accordianContent .answerContent {
+	/* float: left; */
+	/* width: calc(100% - 24px); */
+}
+
+div.accordianContent .answerContent p {
+	display: block;
+    margin: 20px 60px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1;
+    line-height: 30px;
+
+    font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
+
+}
+
+div.accordianContent .answerContent a {
+	color: #1d8bcb;
+}
+
+div.accordianContent .answerContent br {
+
+}
+
+div.accordian_rotate i {
+	transform: rotate(180deg);
+}
+
+div.accordian_select {
+	background: #1d8bcb;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+div.accordian_select p {
+	color: #fff;
 }
