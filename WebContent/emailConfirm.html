@@ -348,7 +348,10 @@
 				swal({
 					title: "인증번호 입력",
 					input: 'text',
-					confirmButtonText: "인증확인"
+					confirmButtonText: "인증확인",
+					allowOutsideClick: false,
+		            allowEscapeKey: false,
+		            allowEnterKey: false
 				}).then(function(result) {
 					if(result.value) {
 						swal({
@@ -359,9 +362,12 @@
 							location.href = "/Dream/agree.html";
 						})
 					} else {
-						swal.showInputError("인증번호를 정확히 입력해 주세요.");
-						return false; 
-					} 
+						swal({
+							title: "인증번호를 정확히 입력해 주세요.",
+							confirmButtonText: "확인" 
+						});
+						console.log("인증실패"); 
+					}
 				})
 			});
 		</script>
