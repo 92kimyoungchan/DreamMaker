@@ -848,8 +848,8 @@ margin-right: 50px;
   margin: 0;
   padding: 0;
   letter-spacing: 4.14px;
-  color: #ffff;
-  font-weight: 550;
+  color: #fff;
+  font-weight: 600;
   text-align: center;
   line-height: 34px;
   font-size: 26px;
@@ -861,7 +861,7 @@ margin-right: 50px;
   width: 155px;
   height: 2px;
   bottom: 0;
-  background: #ffff;
+  background: #fff;
   left: 50px;
   transform: rotate(-47.5deg);
 }
@@ -877,7 +877,7 @@ margin-right: 50px;
   width: 4px;
   height: 4px;
   top: -8px;
-  background: #ffff;
+  background: #fff;
   left: 8px;
   border-radius: 4px;
 }
