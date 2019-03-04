@@ -359,8 +359,9 @@
 							location.href = "/Dream/agree.html";
 						})
 					} else {
-						console.log("인증실패");
-					}
+						swal.showInputError("인증번호를 정확히 입력해 주세요.");
+						return false; 
+					} 
 				})
 			});
 		</script>

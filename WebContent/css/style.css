@@ -2470,7 +2470,8 @@ float: left;
 }
 
 .mainWrap {
-  padding-top:35px;
+    padding-top: 100px;
+    margin-top: 20px;
 }
 
 .main {
@@ -2603,7 +2604,7 @@ padding-top: 2px;
 .mainTitle h2 {
 	font-family: 'Noto Sans KR', sans-serif;
 	float: left;
-    font-size: 32px;
+    font-size: 25px;
     padding-bottom: 10px;
     margin: 0 0 5px;
     color: #7eb4d6;
@@ -2643,8 +2644,13 @@ padding-top: 2px;
 }
 
 .subPContentBox {
-    margin: 35px 0;
-    padding: 0 0 20px;
+    margin: 35px 0 50px;
+    padding: 0 0 50px;
+}
+
+.subPContentBox.noBlank {
+    padding: 0;
+    margin: 35px 0 0;	
 }
 
 .subPContentBox:first-of-type {
@@ -2684,22 +2690,21 @@ padding-top: 2px;
 .circleBox {
     display: inline-block;
     float: left;
-    background: #e9f5fb;
+    background: #EDF4F9;
     border-radius: 50%;
     text-align: center;
     margin: 0 27px;
     width: 130px;
     height: 130px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .circleBox.another {
-	padding: 23px 27px;
 	margin: 0 0 0 27px;
 }
 
 .circleBox span {
-	line-height: 27px;
+	line-height: 22px;
 	color: #7eb4d6;
     font-weight: bold;
     font-size: 12px;
@@ -2730,7 +2735,7 @@ padding-top: 2px;
 .squareRadiusBox {
     border: 1px solid #7eb4d6;
     padding: 25px 0px;
-    border-radius: 50px;
+    border-radius: 25px;
     margin-bottom: 50px;
     position: relative;
     width: 67%;
@@ -2812,7 +2817,7 @@ padding-top: 2px;
     margin: 4px;
     /* padding: 33px 36px; */
     background: #7eb4d6;
-    padding-top: 35px;
+    padding-top: 40px;
     width: 150px;
     height: 150px;
 }
@@ -2823,13 +2828,18 @@ padding-top: 2px;
 }
 
 .boxWrap {
-	margin: 30px 0;
-    padding-bottom: 20px;
+	margin: 30px 0 50px;
+    padding-bottom: 50px;
     position: relative;
 }
 
+.boxWrap.noBlank {
+	margin: 20px 0 0;
+	padding: 0;
+}
+
 .boxWrap.middle .circleBox{
-    padding-top: 50px;
+    padding-top: 55px;
     margin: 0 30px 0 45px;
 }
 
@@ -2852,7 +2862,7 @@ padding-top: 2px;
 .miniIconBox {
 	display: inline-block;
 	float: left;
-	top: calc(100% - 105px);
+	top: calc(100% - 85px);
 	position: absolute;
 	font-size: 20px;
 	color: #7eb4d6;
@@ -2897,9 +2907,15 @@ padding-top: 2px;
 }
 
 .leftIconContent .detail span {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Roboto' ,'Noto Sans KR', sans-serif;
 }
+
+.subWrap {
+	padding-bottom: 50px;
+}
+
+/* 튜티 끝 */
 
 .alone div.titleArea , .alone .titleSmall {
 	text-align:left;
@@ -3127,36 +3143,49 @@ input.inputDate {
 	color: #7eb4d6;
 }
 
+.subPWrap {
+	padding-bottom: 50px;
+}
+
 .buttonBox {
     text-align: center;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 80px; 
+}
+
+.buttonBox button {
+	padding: 12px 22px;
+	border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    min-width: 192px;
 }
 
 .buttonBox .downBtn {
-    padding: 12px 22px;
     border: 1px solid #7eb4d6;
     background: #fff;
-    border-radius: 7px;
-    font-size: 22px;
-    font-weight: bold;
-    margin-right: 5px;
 }
 
 .buttonBox .requestBtn {
-    padding: 12px 27px;
     border: 1px solid #7eb4d6;
     background: #7eb4d6;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: bold;
     color: #fff;
-    margin-right: 5px;
+    
 }
 
 .buttonBox button:last-of-type {
 	margin-right: 0;
 }
+
+.leftIconContent.another {
+	margin-bottom: 5px;
+}
+
+.leftIconContent.another p {
+	padding: 5px 0;
+    line-height: 22px;	
+} 
 
 /* 튜티 소개 페이지 */
 .squareRadiusBox.full {
@@ -3187,7 +3216,7 @@ input.inputDate {
 
 .squareRadiusBox.full .circleBox.blue {
 	margin: 4px;
-	padding-top: 45px;
+	padding-top: 50px;
 }
 
 .remark p {
@@ -3197,7 +3226,7 @@ input.inputDate {
 }
 
 .circleBox.middle {
-	padding-top: 50px;
+	padding-top: 55px;
 }
 
 .squareRadiusBox.full .basicCenterText {
@@ -3210,8 +3239,8 @@ input.inputDate {
 .boxWrapContent {
 	border: 1px solid #7eb4d6;
     padding: 15px 30px 0px;
-    border-radius: 50px;
-    margin-bottom: 70px;
+    border-radius: 25px;
+    margin-bottom: 120px;
 }
 
 .boxWrapContent .detail p {
