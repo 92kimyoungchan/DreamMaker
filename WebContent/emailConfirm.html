@@ -323,6 +323,26 @@
 				}
 				});
 			});
+			
+			/* $("button.confirm").on("click", function() {
+				swal({
+					title: "인증번호 입력",
+					input: 'text',
+					confirmButtonText: "인증확인"
+				}, function(inputValue) {
+					if (inputValue === false) return false;
+					if (inputValue === "") {
+						swal.showInputError("인증번호를 정확히 입력해 주세요.");
+						return false;
+					}
+					swal({
+						title: "인증이 완료되었습니다.",
+						type: "success"
+					}).then(function(result) {
+						location.href = "/Dream/agree.html";
+					});
+				});
+			}); */
 
 			$("button.confirm").on("click", function() {
 				swal({
@@ -335,7 +355,9 @@
 							title: "인증이 완료되었습니다.",
 							type: "success"
 
-						});
+						}).then(function(result) {
+							location.href = "/Dream/agree.html";
+						})
 					} else {
 						console.log("인증실패");
 					}
